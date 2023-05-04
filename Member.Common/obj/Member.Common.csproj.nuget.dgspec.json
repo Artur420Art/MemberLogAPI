@@ -1,0 +1,287 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/aa/Projects/Member.Web.Api/Member.Common/Member.Common.csproj": {}
+  },
+  "projects": {
+    "/Users/aa/Projects/Member.Web.Api/Member.Common/Member.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa/Projects/Member.Web.Api/Member.Common/Member.Common.csproj",
+        "projectName": "Member.Common",
+        "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.Common/Member.Common.csproj",
+        "packagesPath": "/Users/aa/.nuget/packages/",
+        "outputPath": "/Users/aa/Projects/Member.Web.Api/Member.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/aa/Projects/Member.Web.Api/Member.Context/Member.Context.csproj": {
+                "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.Context/Member.Context.csproj"
+              },
+              "/Users/aa/Projects/Member.Web.Api/Member.Infrastructure/Member.Infrastructure.csproj": {
+                "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.Infrastructure/Member.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aa/Projects/Member.Web.Api/Member.Context/Member.Context.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa/Projects/Member.Web.Api/Member.Context/Member.Context.csproj",
+        "projectName": "Member.Context",
+        "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.Context/Member.Context.csproj",
+        "packagesPath": "/Users/aa/.nuget/packages/",
+        "outputPath": "/Users/aa/Projects/Member.Web.Api/Member.Context/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/aa/Projects/Member.Web.Api/Member.DOMAIN/Member.DOMAIN.csproj": {
+                "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.DOMAIN/Member.DOMAIN.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aa/Projects/Member.Web.Api/Member.DOMAIN/Member.DOMAIN.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa/Projects/Member.Web.Api/Member.DOMAIN/Member.DOMAIN.csproj",
+        "projectName": "Member.DOMAIN",
+        "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.DOMAIN/Member.DOMAIN.csproj",
+        "packagesPath": "/Users/aa/.nuget/packages/",
+        "outputPath": "/Users/aa/Projects/Member.Web.Api/Member.DOMAIN/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aa/Projects/Member.Web.Api/Member.Infrastructure/Member.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aa/Projects/Member.Web.Api/Member.Infrastructure/Member.Infrastructure.csproj",
+        "projectName": "Member.Infrastructure",
+        "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.Infrastructure/Member.Infrastructure.csproj",
+        "packagesPath": "/Users/aa/.nuget/packages/",
+        "outputPath": "/Users/aa/Projects/Member.Web.Api/Member.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/aa/Projects/Member.Web.Api/Member.Context/Member.Context.csproj": {
+                "projectPath": "/Users/aa/Projects/Member.Web.Api/Member.Context/Member.Context.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.29.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
