@@ -47,10 +47,13 @@ namespace Member.Infrastructure.Repostory
         public async Task<TEntity?> GetByIdAsync(int id)
         {
 
-            
+
             return await _dbset.FindAsync(id);
         }
-
+        public TEntity DeleteAsync(TEntity entity)
+        {
+            return _dbset.Remove(entity).Entity;
+        }
         public async Task<TEntity?> FindAsync(TEntity entity)
         {
             return await _dbset.FindAsync(entity);

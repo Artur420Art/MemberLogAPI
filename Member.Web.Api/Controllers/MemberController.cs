@@ -63,6 +63,12 @@ namespace Member.Web.Api.Controllers
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
             return Ok(await _accountManager.UserUpdate(memberUpdate, token).ConfigureAwait(false));
         }
+        [HttpGet(Endpoints.DeleteMem), Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IActionResult> DeleteUser(string Token)
+        {
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            return Ok(await _accountManager.DeleteUser(token).ConfigureAwait(false));
+        }
 
     }
 }

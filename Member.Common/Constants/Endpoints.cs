@@ -12,6 +12,8 @@ namespace Member.Common.Constants
 		public const string GetInfo = $"{ApiRouting.AccountRouting}/GetInfo";
         public const string ProductAdd = $"{ApiRouting.AccountRouting}/AddProduct";
 		public const string UpdateMem = $"{ApiRouting.AccountRouting}/UpdateMember";
+		public const string DeleteMem = $"{ApiRouting.AccountRouting}/DeleteMem";
+        
 
     }
 }
