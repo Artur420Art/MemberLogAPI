@@ -13,6 +13,7 @@ namespace Member.Infrastructure.Abstraction.Interfaces
         Task<TEntity> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate,
                                    CancellationToken cancellationToken = default);
 		TEntity UpdateAsync(TEntity entity);
+		bool DeleteAsync(TEntity entity);
     }
 }
 
