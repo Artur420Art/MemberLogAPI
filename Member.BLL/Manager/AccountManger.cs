@@ -148,6 +148,12 @@ namespace Member.BLL.Manager
 			await _repostory.SaveChangesAsync();
 			return user;
         }
+		public async Task<bool> DeleteUser(string token)
+		{
+			var user = await GetUserFromTokenAsync(token);
+			_repostory.DeleteUsAsync(user);
+			return true;
+		}
     }
 }
 

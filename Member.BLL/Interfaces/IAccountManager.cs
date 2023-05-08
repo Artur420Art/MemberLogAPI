@@ -10,6 +10,7 @@ namespace Member.BLL.Interfaces
         Task<ResultModel<string>> LoginUserAsync(MemberLoginModel member);
         Task<ResultModel<MemberEntity>> GetInfo(string token);
 		Task<MemberEntity> UserUpdate(MemberUpdateModel memberUpdate, string token);
+		Task<bool> DeleteUser(string token);
     }
 	
 }

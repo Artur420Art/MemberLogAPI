@@ -28,8 +28,6 @@ namespace Member.Infrastructure.Repostory
             return true;
         }
         
-
-        
         public async Task SaveChangesAsync()
         {
             await _memeberContext.SaveChangesAsync();
@@ -57,6 +55,12 @@ namespace Member.Infrastructure.Repostory
         public async Task<TEntity?> FindAsync(TEntity entity)
         {
             return await _dbset.FindAsync(entity);
+        }
+
+        Task IRepository<TEntity>.DeleteUsAsync(TEntity entity)
+        {
+            _dbset.Remove(entity);
+            return _memeberContext.SaveChangesAsync();
         }
     }
 }
