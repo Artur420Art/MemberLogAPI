@@ -57,13 +57,13 @@ namespace Member.Web.Api.Controllers
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
             return Ok(await _accountManager.GetInfo(token).ConfigureAwait(false));
         }
-        [HttpPost(Endpoints.UpdateMem), Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpPatch(Endpoints.UpdateMem), Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> UpdateMember(MemberUpdateModel memberUpdate)
         {
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
             return Ok(await _accountManager.UserUpdate(memberUpdate, token).ConfigureAwait(false));
         }
-        [HttpGet(Endpoints.DeleteMem), Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpDelete(Endpoints.DeleteMem), Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> DeleteUser(string Token)
         {
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
