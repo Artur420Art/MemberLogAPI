@@ -50,7 +50,6 @@ namespace Member.Web.Api.Extentions
 		public static void AddAutoMapper(this IServiceCollection services)
 		{
 			services.AddAutoMapper(typeof(UserMapProfile));
-            //services.AddControllersWithViews();
         }
         public static void ConfigureJWT(this IServiceCollection services)
         {
@@ -84,16 +83,6 @@ namespace Member.Web.Api.Extentions
         }
         public static void BindModel(this ConfigurationManager configuration, IServiceCollection services)
         {
-            //         var jwtModel = new JWTModel();
-            //var Issuer = configuration["Jwt:Issuer"];
-            //var SecretKey = configuration["Jwt:SecretKey"];
-            //var Audience = configuration["Jwt:Audience"];
-
-            //         jwtModel.Issuer = Issuer;
-            //jwtModel.SecretKey = SecretKey;
-            //jwtModel.Audience = Audience;
-            //services.Configure<JWTModel>(configuration.GetSection("Jwt"));
-
             services.AddAuthentication()
                    .AddJwtBearer(cfg =>
                    {
