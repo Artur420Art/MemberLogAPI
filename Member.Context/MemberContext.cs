@@ -1,13 +1,5 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Member.DOMAIN.Entity;
-using MySql.Data.MySqlClient;
-using MySql.Data.EntityFramework;
-using MySql;
-using MySqlX.XDevAPI;
-using System.Configuration;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using Microsoft.Extensions.Options;
 
 namespace Member.Context
 {
